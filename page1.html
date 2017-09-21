@@ -1,0 +1,223 @@
+<!doctype html Frameset DTD> 
+<html>
+
+<head>
+
+
+<title>maha ahmed</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&effect=brick-sign">
+
+<style type="text/css">
+body , html{
+       height: 100%;
+       margin: 0;
+       font: 400 15px/1.8 "Lato", sans-serif;
+       color: #E9EBEE;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+	
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+.text{
+       width:500px;
+	   height:100px;
+	   color:white;
+	   background-color: rgba(255, 255, 255, 0);
+
+	   position:relative;
+	   top:100px;
+	   left:100px;
+	   float:left;
+	   font-size:1.7em;
+	  
+	   font-family: "Lobster", Sans-serif;
+	   
+}
+
+.parallax {
+    background-image: url('2.jpg');
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	 background-color: rgba(255, 255, 255, 0);
+	 min-height: 500px; 
+}
+
+.container-1 , container-2 , container-3{
+   position: relative;
+   opacity: 0.65;
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   
+}
+.container-1 {
+   background-image: url("2.jpg");
+   min-height: 100%;
+   margin-top:-400px;
+}
+.container-2 {
+  background-image: url("3.png");
+  min-height: 400px;
+  background-size:100%;
+}
+
+.container-3 {
+  background-image: url("4.png");
+  background-size:100%;
+  min-height: 400px;
+}
+
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .container-1, .container-2, .container-3 {
+     background-attachment: scroll;
+    }
+}
+</style>
+</head>
+
+
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+	<a href="#">search</a>
+    <a href="#">Services</a>
+    <a href="#">login</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+
+
+
+<div style="width:100%; height:50px;font-size:30px; background-color:black; cursor:pointer;" onclick="openNav()">&#9776; </div>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+
+
+
+<div class="text">“It’s through mistakes that you can grow. You have to get bad in order to get good.” </div>
+
+<div class="parallax"></div>
+<div class="container-1">
+  <div style="height:180px; width:100%; background-color:rgba(255, 255, 255, 0);font-size:26px; text-align:center; padding-top:430px; ">
+     
+        There are three responses to a piece of design – yes, no, and WOW! ... Milton Glaser. <br />
+        If you’re looking for creative inspiration, then take a look at the work and philosophies of famous designers — they’re talented, wise and iconic for a reason!
+      
+  </div>
+  
+  <div style="position:relative;">
+  <div style="color: #777; height:300px; background-color:white;text-align:center; margin-top:600px; padding-top:5px;text-align:center;">
+       <h3>design thinking</h3>
+       <p>Design Thinking is a methodology used by designers to solve complex problems, and find desirable solutions for clients. A design mindset is not problem-focused, it's solution focused and action oriented towards creating a preferred future</p>
+  </div>
+  </div>
+ 
+</div>
+
+
+ 
+  <div class="container-2">
+  <div style="height:180px; width:100%; background-color:rgba(255, 255, 255, 0);font-size:26px; text-align:center; padding-top:430px; ">
+     
+         “The public is more familiar with bad design than good design". ...Paul Rand. <br />
+        
+      
+  </div>
+  
+  <div style="position:relative;">
+  <div style="color: #777; height:100px; background-color:#2E2E2E;text-align:center; margin-top:200px; padding-top:5px;text-align:center;">
+       
+       <p> “Never fall in love with an idea.If the one you’re with isn’t doing the job, there’s always, always, always another.”</p>
+  </div>
+  </div>
+  </div>
+
+  
+   
+ 
+  <div class="container-3">
+  <div style="height:90px; width:100%; background-color:rgba(255, 255, 255, 0);font-size:26px; text-align:center; padding-top:430px; ">
+     
+         “The public is more familiar with bad design than good design". ...Paul Rand. <br />
+        
+      
+  </div>
+  
+  <div style="position:relative;">
+  <div style="color: #777; height:100px; background-color:black;text-align:center; margin-top:200px; padding-top:5px;text-align:center;">
+       
+       <p>“The life of a designer is a life of fight. Fight against the ugliness. Just like a doctor fights against disease. For us, the visual disease is what we have around, and what we try to do is cure it somehow with design.”</p>
+  </div>
+  </div>
+  </div>
+  
+  
+</body>
+</html>

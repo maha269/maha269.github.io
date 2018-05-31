@@ -240,7 +240,7 @@ body{
 .table{
 	margin:114px 0 0 3px;
 	height:27px;
-	width:750px;
+	width:600px;
 	background-color:#996633;
 	border-radius:10px;
 	
@@ -296,9 +296,9 @@ body{
 
 .cup-cover {
   width: 44px;
-    margin-top:-140px;
+    margin-top:-136px;
 
-  margin-left:266px;
+  margin-left:268px;
 
   z-index: 21;
   border-bottom: 6px solid #ce4646;
@@ -312,9 +312,11 @@ body{
   height:15px;
   margin-left:5px;
   z-index: 21;
-  border-bottom: 6px solid #af4242;
+  border-bottom: 14px solid #af4242;
   border-left: 18px solid transparent;
   border-right: 18px solid transparent; 
+	position:relative;
+	top:-10px;
 }
 
 .clock {

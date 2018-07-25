@@ -117,7 +117,7 @@ nav div ul li{
 }
 .pipe-right{
 	width: 100%;
-	height: 2.5%;
+	height: 5px;
     background-color: #416865;
 }
 .pipe-node{
@@ -128,19 +128,6 @@ nav div ul li{
     position: relative;
     top:12px;
     right: 10px;
-}
-@media (max-width: 480px){
-    .vertical-line{
-    	float: left;
-    	margin-left: 10px;
-    }
-    .pipe{
-    	display: none;
-    }
-   .icons li{
-    	font-size: 22px;
-    }
-    
 }
 
 section {
@@ -171,4 +158,36 @@ ul {
 	margin-bottom:-20px;
 	padding:2%;
 	font-size: 1.3em;
+}
+
+@media (max-width: 480px){
+    .vertical-line{
+    	float: left;
+    	margin-left: 10px;
+    }
+    .pipe{
+    	display: none;
+    }
+    .icons li{
+    	font-size: 22px;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .vertical-line{
+    	float: left;
+    	margin-left: 10px;
+    }
+    .pipe-node{
+    	display: none;
+    }
+    .icons li{
+    	font-size: 28px;
+    }
+    .pipe-right{
+    	height: 7px;
+    	border-radius: 3px;
+    }
+    
 }

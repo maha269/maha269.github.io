@@ -137,6 +137,9 @@ nav div ul li{
     .pipe{
     	display: none;
     }
+   .icons li{
+    	font-size: 22px;
+    }
     
 }
 

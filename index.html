@@ -48,9 +48,16 @@
 			    </ul>
 		    </div>
 
-			<audio controls="controls">
+			<audio  id="player" autoplay loop onloadeddata="setHalfVolume()" >
 			    <source src="http://www.amclassical.com/mp3/amclassical_bon_sonata_in_g_minor_mvt_1.mp3"/>
+			    audio playback is not supported
 			</audio>
+			<div> 
+			  <button class="playBtn round" onclick="document.getElementById('player').play()"><i class="fa fa-play" aria-hidden="true"></i></button> 
+			  <button class="pauseBtn round" onclick="document.getElementById('player').pause()"><i class="fa fa-pause" aria-hidden="true"></i></button> 
+			  <!--<button class="volUpBtn round" onclick="document.getElementById('player').volume += 0.1"><strong>+V</srong></button> 
+			  <button class="volDnBtn round" onclick="document.getElementById('player').volume -= 0.1"><strong>-V</srong></button> -->
+			</div>
 			 
 		</nav>
 		          <!---  end nav bar          !#^!$#^$#^!#%^!#%^!^!#%^-->
@@ -65,15 +72,10 @@
 			<div class="parallax" id="home">
 	    
 		        <div class="over"> 
-		        	<br><br><br><br>
-		        	<div class="photo bounceInDown animated"> 
-		        		<img src="me.jpg">
-		        	</div>
-		        	<h1 class="zoomIn animated">MAHA AHMED</h1>
-		        	<H2>A full stack developer</H2>
-		        	<button class="" href="#portfolio">check out my work</button>
-		        	<button class="" href="#contact">Contact me</button>
-			        </div>
+		        	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		        	<a class="" href="#portfolio" type="button">check out my work</a><br>
+		        	<a class="" href="#contact" type="button">Contact me</a><br><br><br><br><br><br><br><br>
+		        </div>
 			</div>
 
 
@@ -99,13 +101,70 @@
      	  		<!--   start portfolio ------------------- -->
 
 
-	  		<div class="parallax" id="portfolio"> 
-	  			<br><br><h2> portfolio </h2>
+	  		<div class="parallax2" id="portfolio"> 
+	  			<br><br><h1> portfolio </h1>
 	  		</div>
 
-	  		<div class="portfolio-body">		
+	  		<div class="portfolio-body">	
 
-		  		<section class="row">
+			<div class="w3-content w3-container w3-padding-64 text-center">
+
+		  		<br><br><h2 class="w3-center">MY WORK</h2>
+	  			<p class="w3-center"><em>Here are some of my latest work.<br> Click on the link below the images to browse</em></p><br>	
+	  		</div>
+
+
+
+			<div class="demo-wrapper">
+			  
+			  <!-- <h1>Horizontal Portfolio Layout With CSS3 Animations and jQuery</h1> -->
+
+			    <ul class="portfolio-items">
+				    <li class="item">
+				      <figure>
+				        <div class="view">
+				         <img src="eri.png" />
+				        </div>
+				        <figcaption>
+				          <p><span><a href="http://saffairs.eri.sci.eg/">ERI research system</a></span></p>
+				          <p><span>For national research center</span></p>
+				        </figcaption>
+				      </figure>
+				      <div class="date">2018</div>
+				    </li>
+			    
+				    <li class="item">
+				      <figure>
+				        <div class="view">
+				          <img src="hubnsub.png" />
+				        </div>
+				        <figcaption>
+				          <p><span><a href="https://hubnsub.com/">HubnSub workflow platform</a></span></p>
+				          <p><span>for porta people</span></p>
+				        </figcaption>
+				      </figure>
+				      <div class="date">2018</div>
+				    </li>
+
+				    <li class="item">
+				      <figure>
+				        <div class="view">
+				          <img src="cactus.jpg" />
+				        </div>
+				        <figcaption>
+				          <p><span><a href="#">Cactus ecommerce website</a></span></p>
+				          <p><span>Freelance project</span></p>
+				        </figcaption>
+				      </figure>
+				      <div class="date">2019</div>
+				    </li>
+				</ul>
+			</div>
+
+   
+        
+
+		  		<!--<section class="row">
 		  			<div class="col col-lg-8 col-md-6 col-sm-12 left-col">
 		  					<div class="card left-card border-secondary">
 								  <div class="card-header">2014</div>
@@ -196,7 +255,7 @@
 		  					<div class="pipe-node"></div>
 		  					<div class="pipe-right bg-dark"></div>
 		  				</div>
-	            </section>
+	            </section>-->
 	           
 			</div>
 
@@ -205,11 +264,52 @@
 			<!-- srart contact \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 
 
-			<div class="parallax" id="contact"> 
-				<br><br><h2> contact me </h2>
+			<div class="parallax3" id="contact"> 
+				<div class="rightContainer">
+
+					<div class="w3-content w3-container w3-padding-64">
+					  <h3 class="w3-center">WHERE I WORK</h3>
+					  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+					  <address class="w3-row w3-padding-32 w3-section">
+					    <!--<div class="col-md-3">
+					      <!-- Add Google Maps -->
+					      <!--<div id="googleMap" class="w3-round-large"></div>
+					    </div>-->
+					    <div class="contact-form">
+					      <div class="w3-large w3-margin-bottom">
+					        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> 6th Ocober City, Giza, Egypt<br>
+					        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: +20 1011 088 902<br>
+					        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: maha2691992@gmail.com<br>
+					      </div>
+					      <p>Swing by for a cup of coffee, or leave me a note:</p>
+					        <div class="form-row" style="margin:0 -16px 8px -16px">
+					        <div class="form-group col-md-6">
+					          <input class="form-control" type="text" placeholder="Name">
+					        </div>
+					        <div class="form-group col-md-6" style="">
+					          <input class="form-control" type="text" placeholder="Email">
+					        </div><br>
+					      </div>
+					      <textarea class="form-control col-md-12" type="text" placeholder="Comment"></textarea><br>
+					      <a href="mailto:maha2691992@gmail.com" class="btn btn-info">SEND</a><br><br><br>
+					    </div>
+					  </address>
+					</div>
+
+				</div>
+					<div class="contactList contact-icons">
+						<br><h2>Or contact me on :</h2><br>
+					  <a href="https://www.facebook.com/developermaha"><span>Facebook</span></a>
+					  <a href="https://twitter.com/sci_maha_ahmed"><span>Twitter</span></a>
+					  <a href="https://www.linkedin.com/in/maha-ahmed-256389153/"><span>linkedIn</span></a>
+					  <a href="mailto:maha2691992@gmail.com"><span>Email</span></a>
+					</div>
+
+
 			</div>
 
-			<div class="contact-body">
+			<!--<div class="contact-body">
 				<h2><p class="text-center">feel free to contact on these platforms</p></h2>
 
 				<section class="row icons">
@@ -236,7 +336,8 @@
 					</div>
 				</section>
 
-			</div>
+			</div>-->
+			
 
 
 		
@@ -246,7 +347,7 @@
 			<!-- start footer  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 
 			<div class="footer">
-				<p class="text-center"> all rights reserved maha ahmed 2018</p>
+				<p class="text-center">Made with <span style="color: red"> ❤ </span> by Maha Ahmed and hosted by Github</p>
 			</div>
 
 			<!-- end footer \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
